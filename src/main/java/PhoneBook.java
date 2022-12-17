@@ -20,7 +20,7 @@ public class PhoneBook {
                 .findFirst().get();
     }
     public String findByName(String name) {
-        return null;
+        return phoneBook.get(name);
     }
 
 }
