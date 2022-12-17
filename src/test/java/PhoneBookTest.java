@@ -18,7 +18,14 @@ public class PhoneBookTest {
     public void testFindByNumber() {
         PhoneBook pb = new PhoneBook();
         pb.add("Test","1234567890");
-        String tmp = pb.findByNumber("1234567890");
         Assertions.assertTrue(pb.findByNumber("1234567890") == "Test", "Ошибка поиска");
     }
+
+    @Test
+    public void testFindByName() {
+        PhoneBook pb = new PhoneBook();
+        pb.add("Test","1234567890");
+        Assertions.assertTrue(pb.findByName("Test") == "1234567890", "Ошибка поиска");
+    }
+
 }

@@ -19,5 +19,8 @@ public class PhoneBook {
                 .filter(key -> number.equals(phoneBook.get(key)))
                 .findFirst().get();
     }
+    public String findByName(String name) {
+        return null;
+    }
 
 }
