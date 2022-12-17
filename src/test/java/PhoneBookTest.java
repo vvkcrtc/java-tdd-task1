@@ -14,4 +14,10 @@ public class PhoneBookTest {
         Assertions.assertTrue(count == maxCount, "Ошибка добавления");
 
     }
+    @Test
+    public void testFindByNumber() {
+        PhoneBook pb = new PhoneBook();
+        pb.add("Test","1234567890");
+        Assertions.assertTrue(pb.findByNumber("1234567890") == "Test", "Ошибка поиска");
+    }
 }
