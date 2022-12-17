@@ -22,9 +22,14 @@ public class PhoneBook {
     }
 
     public List<String> printAllNames() {
-        List<String> result = new ArrayList<>();
-       
-        return result;
+        if(!phoneBook.isEmpty()) {
+            List<String> result = new ArrayList<>();
+            result.addAll(phoneBook.keySet().stream().toList());
+            Collections.sort(result);
+            System.out.println(result);
+            return result;
+        } else {
+            return null;
+        }
     }
-
 }

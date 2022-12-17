@@ -45,8 +45,6 @@ public class PhoneBookTest {
         pb.add(names.get(2),"1234567899");
         pb.add(names.get(0),"1234567895");
 
-                //pb.printAllNames();
-
         Assertions.assertLinesMatch(names, pb.printAllNames(), "Несоответствие списка" );
 
 
